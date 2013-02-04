@@ -11,6 +11,10 @@ if (!function_exists('intl_get_error_code')) {
     $loader->add('', __DIR__.'/../vendor/symfony/symfony/src/Symfony/Component/Locale/Resources/stubs');
 }
 
+//Stripe integration
+require_once __DIR__.'/../vendor/stripe-php/lib/Stripe/Stripe.php';
+$loader->add('', __DIR__.'/../vendor/stripe-php/lib');
+
 AnnotationRegistry::registerLoader(array($loader, 'loadClass'));
 
 return $loader;

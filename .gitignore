@@ -1,0 +1,4 @@
+app/cache/dev
+app/logs/**.log
+vendor/composer
+composer.phar

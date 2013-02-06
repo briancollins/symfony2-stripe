@@ -5,7 +5,7 @@ namespace Acme\TestBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\DependencyInjection\ContainerAware;
 use Symfony\Component\Security\Core\SecurityContext;
-use Stripe\Stripe;
+use Stripe;
 
 class DefaultController extends Controller
 {
